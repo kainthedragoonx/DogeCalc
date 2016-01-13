@@ -1,0 +1,16 @@
+<div id="calcBody">
+        <p>
+            {{test}}
+        </p>
+        <div>
+            <h3>Running Total: {{runningTotal}}<h3>
+            <div>Random Output: {{output}}</div>
+        </div>
+        <div>
+            <span ng-repeat="i in randomnumbers"><button ng-click="numericInput(i)">{{i}}</button></span>
+            <span ng-repeat="i in ['+','-','/','*','=']"><button ng-click="operatorInput(i)">{{i}}</button></span> 
+        </div>
+        
+    <div>{{sweetOuput()}}</div>
+    <div>{{lessSweetOutput()}}</div>
+</div>
